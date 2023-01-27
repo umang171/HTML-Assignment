@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner html</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="dashheader">
+        <div id="leftnav">
+            <img src="images/menu-bar.svg" alt="menu-bar" id="dashmenu">
+            <div class="dashcompayheading">
+                <img src="images/favicon.ico" alt="Image not found">
+                <h1>Company</h1>
+            </div>
+            <img src="images/search-icon.svg" alt="search-icon" id="dashsearchicon">
+            <span id="dashsearch">Search</span>
+        </div>
+        <div id="rightnav">
+            <img src="images/notification-icon.svg" alt="notification-icon" id="dashnotification">
+            <img src="images/profile.png" alt="profile" id="dashprofile">
+            <span id="dashprofilename">John Doe</span>
+            <img src="images/downward-arrow.svg" alt="downward-arrow" id="dashdownarraow">
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="dashsidebar">
+            <div id="innersidemenu1">
+                <img src="images/dashboard-default.svg" alt="dashboard-default" id="innersidemenuimg1">
+                <span id="innersidecontent1">Dashboard</span>
+            </div>
+            <div id="innersidemenu2">
+                <img src="images/graph-active.svg" alt="dashboard-active" id="innersidemenuimg2">
+                <span id="innersidecontent2">Analysis</span>
+            </div>
+            <div id="sidemenu3">
+                <img src="images/inbox-default.svg" alt="dashboard-default" id="sidemenuimg3">
+                <span id="sidecontent3">Inbox</span>
+            </div>
+            <div id="sidemenu4">
+                <img src="images/clock-default.svg" alt="dashboard-default" id="sidemenuimg4">
+                <span id="sidecontent5">History</span>
+            </div>
+            <div id="sidemenu5">
+                <img src="images/user-default.svg" alt="dashboard-default" id="sidemenuimg5">
+                <span id="sidecontent6">Users</span>
+            </div>
+            <div id="sidemenu6">
+                <img src="images/maintenance-default.svg" alt="dashboard-default" id="sidemenuimg6">
+                <span id="sidecontent6">Maintenance</span>
+            </div>
+            <div id="sidemenu7">
+                <img src="images/setting-default.svg" alt="dashboard-default" id="sidemenuimg7">
+                <span id="sidecontent7">Setting</span>
+            </div>
+        </div>
+        <div id="innermaincontent">
+            <h1 id="mainheading">Analysis</h1>
+            <div id="innermainelements">
+                <div id="onecolumn">
+                    <h3>One column</h3>
+                    <input type="text" name="name" id="name" placeholder="Name"><br>
+                    <select name="dropdown" id="dropdown" disabled="Disabled">
+                        <option value="volvo">Dropdown</option>
+                    </select>
+                    <textarea placeholder="Multiple line" name="multipleline" id="multipleline" rows="6"></textarea>  
+                </div>
+                <div id="twocolumn">
+                    <h3>Two column</h3>
+                    <div id="innertwocolumn">
+                        <input type="text" name="innername" id="innername" placeholder="Name">
+                        <fieldset>
+                            <legend>Username</legend>
+                            <input type="text" name="innerusername" id="innerusername" value="Umang" >
+                        </fieldset>
+                        <input type="password" name="innerpassword" id="innerpassword" placeholder="Password">
+                        <select name="dropdown2" id="dropdown2" disabled="Disabled">
+                            <option value="dropdown">Dropdown</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="threecolumn">
+                    <h3>Three column</h3>
+                    <div id="innerthreecolumn">
+                        <fieldset>
+                            <legend>Focus</legend>
+                            <input type="text" name="innerfocus" id="innerfocus">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Password</legend>
+                            <input type="password" name="threepass" id="threepass" value="123456">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Disabled</legend>
+                            <input type="text" name="innerdis" id="innerdis" value="Umang" disabled>
+                        </fieldset>
+                    </div>
+                </div>
+                <div id="fourcolumn">
+                    <h3>Four column</h3>
+                    <div id="innerfourcolumn">
+                        <fieldset>
+                            <legend>Designation</legend>
+                            <input type="text" name="fourdesc" id="fourdesc">
+                        </fieldset>
+                        <input type="text" name="fourname" id="fourname" placeholder="Name">
+                        <fieldset>
+                            <legend>Username</legend>
+                            <input type="text" name="fourusername" id="fourusername" value="Umang">
+                        </fieldset>
+                        <select name="fourselect" id="fourselect">
+                            <option value="Select">Select</option>
+                        </select>
+                        <label for="fourdesc">Enter Valid Data</label>
+                        <label for="fourname">Enter your full name as per ID</label>
+                    </div>
+                </div>
+                <div id="fivecolumn">
+                    <h3>Other Design elements</h3>
+                    <div id="otherelements">
+                        <div id="fileupload">                            
+                            <h4>File Upload</h4>
+                            <input type="button" value="      Upload">
+                            <label for="fileupload">No item selected</label>
+                        </div>
+                        <div id="snackbar">
+                            <h4>Snackbar</h4>
+                            <div id="snackmessages">
+                                <div class="snackmsgs" id="snackmsg1">
+                                    <img src="images/error-icon.svg" alt="error-icon">
+                                    <span>This is an error message</span>
+                                </div>
+                                <div class="snackmsgs" id="snackmsg2">
+                                    <img src="images/info-icon.svg" alt="info-icon">
+                                    <span>This is an information message</span>
+                                </div>
+                                <div class="snackmsgs" id="snackmsg3">
+                                    <img src="images/warning-icon.svg" alt="error-icon">
+                                    <span>This is an warning message</span>
+                                </div>
+                                <div class="snackmsgs" id="snackmsg4">
+                                    <img src="images/success-icon.svg" alt="info-icon">
+                                    <span>This is an success message</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
