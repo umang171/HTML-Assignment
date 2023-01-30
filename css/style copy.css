@@ -495,7 +495,7 @@ text-align: left;
     }
     #dashsidebar{
         position: absolute;
-        top: 67px;
+        top: 7.9vh;
         background: white;
         height: 100vh;
         width: 30vw;
@@ -566,6 +566,37 @@ text-align: left;
     }
     #dashtableheading>h2 {
         font-size: 1.8vh;
+    }
+    #dashgraph {
+        background-color: white;
+        height: 50vh;
+        width: 100%;
+    }
+    #dashgraphimg {
+        height: 40vh;
+        width: 84vw;
+    }
+    #leftgraphnav {
+        width: 52%;
+    }
+    #dashboarddigits {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: flex-start;
+    }
+    .dashboarddigitcontent {
+        width: 25vw;
+        margin: 1vw;
+    }
+    .dashdigitimg {
+        height: 5vh;
+        width: 5vw;
+    }
+    .digitheading {
+        font-size: 2.8vh;
+    }
+    .digitheading {
+        font-size: 2.8vh;
     }
     #piechartheading,  #leftgraphnav > h3{
         font-size: 3.5vh;
