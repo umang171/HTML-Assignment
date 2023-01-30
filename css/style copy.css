@@ -8,6 +8,7 @@
 
 .container {
     display: flex;
+    height: 100vh;
 }
 
 .imagepart {
@@ -380,10 +381,6 @@ text-align: left;
     align-items: center;
 }
 
-#dashtable{
-    border: 1px solid black;    
-    background: white;
-}
 #dashtableheading{
     display: flex;
     align-items: center;
@@ -398,38 +395,31 @@ text-align: left;
     font-size: 2vh;
 }
 #dashboardtable{
-    width: 90%;
-    margin: 20px auto;
+    width: 70vw;
+    margin: 3vh auto;
 }
 #dashboardtable th{
     color:#ADADAD;
 }
-#dashboardtable tr{
+#dashboardtable tr th,#dashboardtable tr td{
     border-bottom: 1px solid #dfdfdf;
-    padding: 4px;
-}
-#dashboardtable td{
-    padding: 10px 3px;
+    padding: 1vh 1vw;
+    text-align: left;
 }
 .paid{
     background-color: #EBFFEF;
-    background-color: #EBFFEF;
     color: green;
-    display: block;
-    width: 70px;
-    text-align: center;
 }
 .failed{
     background-color: #FFF5F5;
     color: red;
-    display: block;
-    width: 70px;
-    text-align: center;
 }
 .pending{
     background-color: #F8F8F8;
     color: #BABABA;
+}
+.dashstatus{
     display: block;
-    width: 70px;
+    width: 4vw;
     text-align: center;
 }
