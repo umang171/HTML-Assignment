@@ -8,7 +8,6 @@
 
 .container {
     display: flex;
-    height: 100vh;
 }
 
 .imagepart {
@@ -51,7 +50,6 @@
 #tagline {
     text-align: left;
     font: normal normal 300 6vh/7vh Roboto;
-    letter-spacing: 0px;
     color: #3E3E3E;
     opacity: 1;
 }
@@ -59,19 +57,16 @@
 #expertword {
     text-align: left;
     font: normal normal 900 6vh/7vh Roboto;
-    letter-spacing: 0px;
     color: #C8242F;
 }
 
 #loginheading {
     text-align: left;
     font: normal normal normal 4vh/8vh Roboto;
-    letter-spacing: 0px;
     color: #3E3E3E;
     opacity: 1;
 }
-
-#indexname {
+.indexinputs{
     width: 30vw;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #ADADAD;
@@ -81,20 +76,8 @@
     color: #ADADAD;
     opacity: 1;
     margin: 1vh 0vw;
+   
 }
-
-#indexpass {
-    width: 30vw;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #ADADAD;
-    border-radius: 1vh;
-    font-size: 3vh;
-    padding: 2vh 1vw;
-    color: #ADADAD;
-    opacity: 1;
-    margin: 1vh 0vw;
-}
-
 #indexsubmit {
     background: #C8242F 0% 0% no-repeat padding-box;
     border-radius: 4vh;
@@ -107,8 +90,7 @@
 #indexforgot{
 text-align: left;
     font: normal normal normal 3vh/2vh Roboto;
-    letter-spacing: 0px;
-    margin-left: 28vh;
+    margin-left: 12vw;
     color: #ADADAD;
     opacity: 1;
     text-decoration: none;}
@@ -124,4 +106,330 @@ text-align: left;
     letter-spacing: 0px;
     color: #C8242F;
     opacity: 1;
+}
+/* Responsive design of index.hmlt */
+@media only screen and (max-width: 1300px) and (min-width: 1000px) {
+    #indexforgot{
+        font: normal normal normal 3vh/2vh Roboto;
+        letter-spacing: 0px;
+        margin-left: 5vw;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .container{
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    }
+    .imagepart{
+        height: 40vh;
+    }
+    #indeximg{
+        width: 30vw;
+        height: 35vh;
+    }
+    .contentpart{
+        font-size: 2vh;
+        height: 60vh;
+        align-items: center;
+        width: 64%;
+    }
+    #contentlogo{
+        height: 6vh;
+    }
+    #tagline,#expertword{
+        font-size: 3vh;
+        line-height: 5vh;
+        text-align: center;
+    }
+    #loginheading{
+        font-size: 3vh;
+        line-height: 4vh;
+    }
+    .contentpart form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .indexinputs{
+        font-size: 2vh;
+        padding: 1vh;
+        margin: 1vh;
+    }
+    #indexsubmit{
+        font-size: 2vh;
+        margin: 1vh;
+        padding: 1vh 4vh;
+    }
+    #indexforgot{
+        margin: 0;
+        font-size: 2vh;
+    }
+}
+@media only screen and (max-width: 600px) and (min-width:360px) {
+    #indeximg{
+        width: 30vh;
+    }
+    #loginheading{
+        font-size: 2.4vh;
+        line-height: 4vh;
+        font-weight: bold;
+    }
+    .indexinputs{
+        width: 50vw;
+    }
+}
+
+/* ======================================================================================================================================== */
+/* dashboard.html */
+/* ======================================================================================================================================== */
+#dashheader{
+    height: 8vh;
+    display: flex;
+}
+#leftnav{
+    width: 75vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2vh 2vw;
+}
+#companylogo{
+    margin: 1vh 2vw;
+    height: 4vh;
+}
+#searchdash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 3vw;
+}
+#dashsearch{
+    font-size: 2vh;
+}
+#dashsearchicon{
+    height: 3vh;
+    margin: 1vh 1vw;
+}
+#rightnav{
+    width: 25vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#dashnotification{
+    margin: 2vh;
+}
+#profiledash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 2vw;
+}
+#dashprofile{
+    margin: 1vh;
+}
+#dashprofilename{
+    margin: 1vh;
+    font-size: 2vh;
+}
+#dashdownarraow{
+    margin: 1vh;
+}
+.dashcontainer{
+    display: flex;
+    height: 87vh;
+}
+#dashsidebar{
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vh 0vh;
+}
+.dashsideimg{
+    height: 5vh;
+}
+.dashsidecontent{
+    font-size: 2vh;
+    font-weight: bold;
+    margin: 0vh 1vw;
+}
+.dashsidemenu{
+    height: 6vh;
+    width: 11vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1vh 0vw;
+    border-radius: 1vh;
+}
+.dashmenuselect{
+    background: #FFF3F4 0% 0% no-repeat padding-box;
+    color: #C8242F;
+}
+#dashmaincontent{
+    background-color: #F8F8F8;
+    width: 82vw;
+    padding: 4vh 3vw;
+}
+#dashmainheading{
+    font-size: 4vh;
+    padding: 1vh 1vw;
+}
+
+#dashboarddigits{       
+    height: 12vh;
+    margin: 3vh 0vw;
+    width: 76vw;
+    display: flex;
+    justify-content: space-between;
+}
+.dashboarddigitcontent{
+    background-color: white;
+    height: 10vh;
+    width: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dashdigitimg{
+    width: 4vh;
+    height: 4vw;
+}
+/* Charts */
+#charts{
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh;
+}
+#dashgraph{
+    background-color: white;
+    height: 50vh;
+    width: 66%;
+    
+}
+#graphnav{
+    display: flex;
+}
+#leftgraphnav{
+    width: 60%;
+    padding: 1vh;
+}
+#leftgraphnav > h3{
+    font-weight: bolder;
+    padding-left: 2vw;
+    font-size: 3vh;
+}
+#rightgraphnav{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.graphrightnavs{
+    margin: 1vh 0.5vw;
+}
+.graphnavs{
+    height: 5vh;
+}
+#graphselected{
+    text-decoration: underline;
+    color: red;
+}
+#dashgraphimg
+{
+    height: 37vh;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+#piechart{
+    background-color: white;
+    height: 50vh;
+    width: 32%;
+}
+#piechartheading{
+    padding: 2vh 2vw;
+    font-size: 3vh;
+}
+#piechartimg{
+    display: block;
+    margin: auto;
+    height: 27vh;
+}
+#piechartname{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pieradioimg{
+    height: 4vh;
+    width: 4vh;
+}
+.piechartitem{
+    height: 4vh;
+    width: 11vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#dashtable{
+    border: 1px solid black;    
+    background: white;
+}
+#dashtableheading{
+    display: flex;
+    align-items: center;
+}
+#dashtableheading>h2{
+    margin: 1vh 3vw;
+    font-size: 3vh;
+    width: 85%;
+}
+#tableview{
+    color: #C8242F;
+    font-size: 2vh;
+}
+#dashboardtable{
+    width: 90%;
+    margin: 20px auto;
+}
+#dashboardtable th{
+    color:#ADADAD;
+}
+#dashboardtable tr{
+    border-bottom: 1px solid #dfdfdf;
+    padding: 4px;
+}
+#dashboardtable td{
+    padding: 10px 3px;
+}
+.paid{
+    background-color: #EBFFEF;
+    background-color: #EBFFEF;
+    color: green;
+    display: block;
+    width: 70px;
+    text-align: center;
+}
+.failed{
+    background-color: #FFF5F5;
+    color: red;
+    display: block;
+    width: 70px;
+    text-align: center;
+}
+.pending{
+    background-color: #F8F8F8;
+    color: #BABABA;
+    display: block;
+    width: 70px;
+    text-align: center;
 }

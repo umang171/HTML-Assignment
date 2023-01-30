@@ -820,7 +820,6 @@ Innerpage
 }
 
 #fivecolumn{
-    border: 1px solid black;
     width: 90%;
     margin: 4px auto;
     padding: 5px;
@@ -831,7 +830,6 @@ Innerpage
 
 #fileupload
 {
-    border: 1px solid black;
 }
 
 #fileupload input{
@@ -878,4 +876,49 @@ Innerpage
 #snackmsg4{
     border-color: #00AF27;
     color: #00AF27;
+}
+.innerradio{
+    accent-color: #C8242F;
+}
+.innercheck{
+    accent-color: #C8242F;
+}
+#btncall1
+{
+    background-color: #C8242F;
+    border-radius: 4vh;
+    border-color: white;
+    color: white;
+}
+#btncall2{
+    border-radius: 4vh;
+    border-color: #C8242F;
+    color: #C8242F;
+    background-color: white;
+}
+.btncall{
+    padding: 1vh 5vh;
+    font-size: 2vh;
+}
+#innertabcontent{
+    text-align: left;
+font: normal normal normal 15px/24px Roboto;
+letter-spacing: 0px;
+color: #3E3E3E;
+opacity: 1;
+}
+#innertab{
+    border-bottom:1px solid black;
+}
+.innertabbtn{
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 3px 10px;
+    font-size: 2vh;
+}
+.selected{
+    color: #C8242F;
+    border-bottom: 3px solid;
+    border-color: #C8242F;
 }
