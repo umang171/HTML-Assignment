@@ -242,7 +242,6 @@ text-align: left;
 }
 .dashcontainer{
     display: flex;
-    height: 87vh;
 }
 #dashsidebar{
     width: 18vw;
@@ -255,9 +254,9 @@ text-align: left;
     height: 5vh;
 }
 .dashsidecontent{
-    font-size: 2vh;
+    font-size: 1.8vh;
     font-weight: bold;
-    margin: 0vh 1vw;
+    margin: 0vh 0.5vw;
 }
 .dashsidemenu{
     height: 6vh;
@@ -267,6 +266,7 @@ text-align: left;
     align-items: center;
     margin: 1vh 0vw;
     border-radius: 1vh;
+    padding: 0vh 1vw;
 }
 .dashmenuselect{
     background: #FFF3F4 0% 0% no-repeat padding-box;
@@ -296,6 +296,12 @@ text-align: left;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+.digitheading{
+    font-size: 3vh;
+}
+.digitsmallheading{
+    font-size: 2vh;
 }
 .dashdigitimg{
     width: 4vh;
@@ -334,6 +340,7 @@ text-align: left;
 }
 .graphrightnavs{
     margin: 1vh 0.5vw;
+    font-size: 2vh;
 }
 .graphnavs{
     height: 5vh;
@@ -345,6 +352,7 @@ text-align: left;
 #dashgraphimg
 {
     height: 37vh;
+    width: 43vw;
     text-align: center;
     display: block;
     margin: auto;
@@ -363,6 +371,7 @@ text-align: left;
     display: block;
     margin: auto;
     height: 27vh;
+    width: 23vw;
 }
 #piechartname{
     display: flex;
@@ -379,6 +388,10 @@ text-align: left;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+#dashtable{
+    background: white;
+    padding: 1vh;
 }
 
 #dashtableheading{
@@ -405,6 +418,7 @@ text-align: left;
     border-bottom: 1px solid #dfdfdf;
     padding: 1vh 1vw;
     text-align: left;
+    font-size: 2vh;
 }
 .paid{
     background-color: #EBFFEF;
@@ -422,4 +436,170 @@ text-align: left;
     display: block;
     width: 4vw;
     text-align: center;
+}
+/* =================================================================================================== */
+/* responsive dashboard */
+/* =================================================================================================== */
+@media screen and (max-width:1200px) {
+    #dashmaincontent {
+        padding: 3vh;
+    }
+    .dashsideimg{
+        height: 3vh;
+    }
+    #dashmainheading{
+        font-size: 3vh;
+        padding: 0vh 1vw;
+    }
+    .digitheading{
+        font-size: 2.3vh;
+    }
+    #dashboarddigits{
+        margin: 2vh 0vw;
+    }
+    .digitsmallheading{
+        font-size: 1.3vh;
+    }
+    #charts{
+        padding: 2vh;
+    }
+    .dashdigitimg{
+        height: 3vh;
+        width: 3vw;
+    }
+    #piechartheading,#dashtableheading>h2,#leftgraphnav > h3{
+        font-size: 2.5vh;
+    }
+    .graphrightnavs{
+        font-size: 1.7vh;
+    }
+    .piechartitem {
+        width: 20vw;
+    }
+    #piechartname{
+        flex-direction: column;
+        font-size: 1.5vh;
+    }
+    #dashboardtable tr th, #dashboardtable tr td {
+        font-size: 1.5vh;
+    }
+}
+@media screen and (max-width:850px)
+{
+    #leftnav{
+        width: 60vw;
+    }
+    
+    #rightnav{
+        width: 37vw;
+    }
+    #dashsidebar{
+        position: absolute;
+        top: 67px;
+        background: white;
+        height: 100vh;
+        width: 30vw;
+        display: none;
+        align-items: flex-start;
+        padding: 2vh 2vh;
+        border:1px solid #C8242F;
+    }
+    .dashsidemenu{
+        width: 25vw;
+    }
+    .dashcontainer{
+        width: 100vw;
+    }
+    #dashboarddigits{
+        width: 90vw;
+    }
+    .dashboarddigitcontent{
+        width: 17vw;
+    }
+    .digitheading{
+        font-size: 1.8vh;
+    }
+    #piechartheading{
+        padding: 1vh;
+    }
+    #tableview{
+        font-size: 1.7vw;
+    }
+    #dashmaincontent{        
+        width: 100vw;
+    }
+    #dashboardtable{
+        width: 82vw;
+        margin: 1vh auto;
+    }
+    #dashboardtable tr th, #dashboardtable tr td {
+        font-size: 1.3vh;
+        padding: 0.3vh 0.5vw;
+    }
+}
+@media screen and (max-width:600px){
+    body{
+        background-color: pink;
+    }
+    #companylogo {
+        margin: 1vh 1vw;
+        height: 3vh;
+    }
+    #searchdash{
+        padding: 1vh 1vw;
+    }
+    #dashsearchicon{
+        margin: 0vh;
+    }
+    #leftnav {
+        width: 60vw;
+    }
+    #rightnav{
+        width: 40vw;
+    }
+    #dashnotification {
+        margin: 0vh;
+        margin-left: 2.1vw;
+    }
+    #profiledash{
+        padding: 0vh;
+    }
+    #dashtableheading>h2 {
+        font-size: 1.8vh;
+    }
+    #piechartheading,  #leftgraphnav > h3{
+        font-size: 3.5vh;
+    }
+    #tableview {
+        font-size: 3vw;
+    }
+    #dashboardtable tr th, #dashboardtable tr td {
+        font-size: 1.1vh;
+        padding: 0.3vh 0.5vw;
+    }
+    #charts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1vh;
+        height: auto;
+    }
+    #piechart {
+        background-color: white;
+        height: auto;
+        width: 100%;
+    }
+    #piechartimg {
+        height: 30vh;
+        width: 60vw;
+    }
+    #piechartname {
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 2vh;
+    }
+    .piechartitem {
+        width: 38vw;
+    }
 }
