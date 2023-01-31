@@ -1,35 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-        <div class="profileImg">
-            <img src="images/hero-image.png" alt="Images not found">
-        </div>
-        <div class="profileContent">
-            <div class="companyHeading">
-                <img src="images/favicon.ico" alt="Image not found">
-                <h1>Company</h1>
-            </div>
-            <h1 id="tagline">We are <span id="experts">experts</span> in business, marketing, growth, & sales.</h1>
-            <span id="loginheading">Login into your account</span>
-            <form action="#">
-                <input type="text" name="username" id="username" placeholder="Username ">
-                <input type="password" name="password" id="password" placeholder="Password">
-                <input type="submit" id="login" value="Login">
-            </form>
-            <a href=""><span id="forgot">Forgot Password?</span></a>
-            <span id="member">Are you a new Member?</span>
-            <a href=""><span id="register">Register here</span></a>
-        </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="imagepart">
+      <img src="images/hero-image.png" alt="image" id="indeximg">
     </div>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
+    <div class="contentpart">
+      <img src="images/logo.svg" alt="logo" id="contentlogo">
+      <span id="tagline">We are <span id="expertword">experts</span> in business, marketing, growth, & sales.</span>
+      <span id="loginheading">Login into your account</span>
+      <form action="#">
+        <input type="text" name="indexname" id="indexname" class="indexinputs" placeholder="Username">
+        <input type="password" name="indexpass" id="indexpass" class="indexinputs" placeholder="Password">
+        <input type="submit" value="Login" id="indexsubmit">
+        <a href="#" id="indexforgot">Forgot Password?</a><br>
+        <span id="indexnewmember">Are you a new Member?</span>
+        <span id="indexclick">Register here</span>
+      </form>
+    </div>
+  </div>
+  <script src="js/custom.js"></script>
+</body>
+
 </html>

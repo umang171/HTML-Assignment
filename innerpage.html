@@ -10,51 +10,52 @@
 <body>
     <header id="dashheader">
         <div id="leftnav">
-            <img src="images/menu-bar.svg" alt="menu-bar" id="dashmenu">
-            <div class="dashcompayheading">
-                <img src="images/favicon.ico" alt="Image not found">
-                <h1>Company</h1>
+            <img src="images/menu-bar.svg" alt="menu-bar" id="dashmenu" onclick="togglesidebar()">
+            <img src="images/logo.svg" alt="logo" id="companylogo">
+            <div id="searchdash">
+                <img src="images/search-icon.svg" alt="search-icon" id="dashsearchicon">
+                <span id="dashsearch">Search</span>
             </div>
-            <img src="images/search-icon.svg" alt="search-icon" id="dashsearchicon">
-            <span id="dashsearch">Search</span>
         </div>
+        
         <div id="rightnav">
             <img src="images/notification-icon.svg" alt="notification-icon" id="dashnotification">
-            <img src="images/profile.png" alt="profile" id="dashprofile">
-            <span id="dashprofilename">John Doe</span>
-            <img src="images/downward-arrow.svg" alt="downward-arrow" id="dashdownarraow">
+            <div id="profiledash">
+                <img src="images/profile.png" alt="profile" id="dashprofile">
+                <span id="dashprofilename">John Doe</span>
+                <img src="images/downward-arrow.svg" alt="downward-arrow" id="dashdownarraow">
+            </div>
         </div>
     </header>
-
-    <div class="container">
+    <div class="dashcontainer">
         <div id="dashsidebar">
-            <div id="innersidemenu1">
-                <img src="images/dashboard-default.svg" alt="dashboard-default" id="innersidemenuimg1">
-                <span id="innersidecontent1">Dashboard</span>
+            <div id="sidemenu1" class="dashsidemenu dashmenuselect">
+                <img src="images/dashboard-active.svg" alt="dashboard-active" id="sidemenuimg1" class="dashsideimg">
+                <span id="sidecontent1" class="dashsidecontent">Dashboard</span>
             </div>
-            <div id="innersidemenu2">
-                <img src="images/graph-active.svg" alt="dashboard-active" id="innersidemenuimg2">
-                <span id="innersidecontent2">Analysis</span>
+            <div id="sidemenu2" class="dashsidemenu">
+                <img src="images/graph-default.svg" alt="dashboard-default" id="sidemenuimg2" class="dashsideimg">
+                <span id="sidecontent2" class="dashsidecontent">Analysis</span>
             </div>
-            <div id="sidemenu3">
-                <img src="images/inbox-default.svg" alt="dashboard-default" id="sidemenuimg3">
-                <span id="sidecontent3">Inbox</span>
+            <div id="sidemenu3" class="dashsidemenu">
+                <img src="images/inbox-default.svg" alt="dashboard-default" id="sidemenuimg3" class="dashsideimg">
+                <span id="sidecontent3" class="dashsidecontent">Inbox</span>
             </div>
-            <div id="sidemenu4">
-                <img src="images/clock-default.svg" alt="dashboard-default" id="sidemenuimg4">
-                <span id="sidecontent5">History</span>
+            <div id="sidemenu4" class="dashsidemenu">
+                <img src="images/clock-default.svg" alt="dashboard-default" id="sidemenuimg4" class="dashsideimg">
+                <span id="sidecontent5" class="dashsidecontent">History</span>
             </div>
-            <div id="sidemenu5">
-                <img src="images/user-default.svg" alt="dashboard-default" id="sidemenuimg5">
-                <span id="sidecontent6">Users</span>
+            <div id="sidemenu5" class="dashsidemenu">
+                <img src="images/user-default.svg" alt="dashboard-default" id="sidemenuimg5" class="dashsideimg">
+                <span id="sidecontent6" class="dashsidecontent">Users</span>
             </div>
-            <div id="sidemenu6">
-                <img src="images/maintenance-default.svg" alt="dashboard-default" id="sidemenuimg6">
-                <span id="sidecontent6">Maintenance</span>
+            <div id="sidemenu6" class="dashsidemenu">
+                <img src="images/maintenance-default.svg" alt="dashboard-default" id="sidemenuimg6" class="dashsideimg">
+                <span id="sidecontent6" class="dashsidecontent">Maintenance</span>
             </div>
-            <div id="sidemenu7">
-                <img src="images/setting-default.svg" alt="dashboard-default" id="sidemenuimg7">
-                <span id="sidecontent7">Setting</span>
+            <div id="sidemenu7" class="dashsidemenu">
+                <img src="images/setting-default.svg" alt="dashboard-default" id="sidemenuimg7" class="dashsideimg">
+                <span id="sidecontent7" class="dashsidecontent">Setting</span>
             </div>
         </div>
         <div id="innermaincontent">
@@ -62,7 +63,7 @@
             <div id="innermainelements">
                 <div id="onecolumn">
                     <h3>One column</h3>
-                    <input type="text" name="name" id="name" placeholder="Name"><br>
+                    <input type="text" name="name" id="name" placeholder="Name">
                     <select name="dropdown" id="dropdown" disabled="Disabled">
                         <option value="volvo">Dropdown</option>
                     </select>
@@ -85,7 +86,7 @@
                 <div id="threecolumn">
                     <h3>Three column</h3>
                     <div id="innerthreecolumn">
-                        <fieldset>
+                        <fieldset id="threefocus">
                             <legend>Focus</legend>
                             <input type="text" name="innerfocus" id="innerfocus">
                         </fieldset>
@@ -102,11 +103,17 @@
                 <div id="fourcolumn">
                     <h3>Four column</h3>
                     <div id="innerfourcolumn">
+                        <div id="fourdesignation">
                         <fieldset>
                             <legend>Designation</legend>
                             <input type="text" name="fourdesc" id="fourdesc">
                         </fieldset>
-                        <input type="text" name="fourname" id="fourname" placeholder="Name">
+                        <label for="fourdesc">Enter Valid Data</label>
+                        </div>
+                        <div id="innerfourinput">
+                            <input type="text" name="fourname" id="fourname" placeholder="Name">
+                            <label for="fourname">Enter your full name as per ID</label>
+                        </div>
                         <fieldset>
                             <legend>Username</legend>
                             <input type="text" name="fourusername" id="fourusername" value="Umang">
@@ -114,9 +121,8 @@
                         <select name="fourselect" id="fourselect">
                             <option value="Select">Select</option>
                         </select>
-                        <label for="fourdesc">Enter Valid Data</label>
-                        <label for="fourname">Enter your full name as per ID</label>
                     </div>
+                    
                 </div>
                 <div id="fivecolumn">
                     <h3>Other Design elements</h3>
@@ -128,13 +134,15 @@
                         </div>
                         <div id="innerradiobutton">
                             <h4>Radio Button</h4>
-                            <input type="radio" name="innerradio" class="innerradio">Option 1
-                            <input type="radio" name="innerradio" class="innerradio" checked>Option 2
+                            <div id="innerradiobtns">
+                                <input type="radio" name="innerradio" class="innerradio"><label class="radiolabels" for="innerradio">Option 1</label> 
+                                <input type="radio" name="innerradio" class="innerradio" checked><label class="radiolabels" for="innerradio">Option 2</label> 
+                            </div>
                         </div>
                         <div id="innercheckbox">
                             <h4>Checkbox</h4>
-                            <input type="checkbox" name="innercheck" class="innercheck" id="innercheck1">Option 1
-                            <input type="checkbox" name="innercheck" class="innercheck" id="innercheck2" checked>Option 2
+                            <input type="checkbox" name="innercheck" class="innercheck" id="innercheck1"><label for="innercheck" class="checklabels"> Option 1</label>
+                            <input type="checkbox" name="innercheck" class="innercheck" id="innercheck2" checked><label for="innercheck" class="checklabels"> Option 2</label>
                         </div>
                         <div id="snackbar">
                             <h4>Snackbar</h4>
@@ -176,7 +184,6 @@
             </div>
         </div>
     </div>
-    <script src="js/bootstrap.bundle.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>
